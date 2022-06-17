@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+<title>Education</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+  
+}
+
+</style>
+</head>
+<body>
+
+</style>
+</head>
+<body>
+
+    <section>
+            <div class="navbar">
+                <a class="active" href="Personal Web.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+                <a href="biodata.html"><i class="fa fa-fw fa-user"></i> Biodata</a> 
+                <a href="experience.html"><i class="fa fa-fw fa-linkedin-square"></i> Experience</a> 
+                <a href="education.html"><i class="fa fa-fw fa-graduation-cap"></i> Education</a>
+                <a href="gallery.html"><i class="fa fa-fw fa-image"></i> Gallery</a>
+                <a href="contact me.html"><i class="fa fa-fw fa-paper-plane"></i> Contact Me</a>
+        </div>
+    
+
+        <div class="header">
+          <h2 style="font-family:verdana;"><marquee> <i>Education</i></h2> </marquee>
+        
+        </div>
+
+        <html>
+          <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <style>
+          * {box-sizing: border-box}
+          body {font-family: "Lato", sans-serif;}
+          
+          /* Style the tab */
+          .tab {
+            float: left;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+            width: 30%;
+            height: 300px;
+          }
+          
+          /* Style the buttons inside the tab */
+          .tab button {
+            display: block;
+            background-color: inherit;
+            color: black;
+            padding: 22px 16px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 17px;
+          }
+          
+          /* Change background color of buttons on hover */
+          .tab button:hover {
+            background-color: #ddd;
+          }
+          
+          /* Create an active/current "tab button" class */
+          .tab button.active {
+            background-color: #ccc;
+          }
+          
+          /* Style the tab content */
+          .tabcontent {
+            float: left;
+            padding: 0px 12px;
+            border: 1px solid #ccc;
+            width: 70%;
+            border-left: none;
+            height: 300px;
+          }
+          </style>
+          </head>
+          <body>
+          
+          <h2>Education Stage</h2>
+          <p>This are my education stage starting from SPM, Diploma, Degree:</p>
+          
+          <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'SPM')" id="defaultOpen">SPM</button>
+            <button class="tablinks" onclick="openCity(event, 'Diploma')">Diploma</button>
+            <button class="tablinks" onclick="openCity(event, 'Degree')">Degree</button>
+          </div>
+          
+          <div id="SPM" class="tabcontent">
+            <img src="sekolah.png" alt="Trulli" width="200" height="180">
+            <h3>SPM</h3>
+<ul>
+  <li>For highschool, I went to SMK  DATO' SYED OMAR</li>
+  <li>I take my SPM Examination here</li>
+  <li>My SPM examination result is 5A, 2B and 2C</li>
+</ul>  
+
+          </div>
+          
+          <div id="Diploma" class="tabcontent">
+            <img src="uitm.png" alt="Trulli" width="200" height="180">
+            <h3>Diploma</h3>
+            <ul>
+              <li>I further my studies in diploma of Information Management</li>
+              <li>I studied at UiTM Kedah branch which is located at Merbok, Kedah</li>
+              <li>My CGPA for diploma is 3.35</li>
+            </ul>              
+            
+          </div>
+          
+          <div id="Degree" class="tabcontent">
+            <img src="uitm.png" alt="Trulli" width="200" height="180">
+            <h3>Degree</h3>
+            <ul>
+              <li>I then continue to pursue my studies in Degree which are Bachelor of Information Science (HONS) Record Management</li>
+              <li>I studied at UiTM Puncak Perdana campus for degree</li>
+              <li>My CGPA for degree is 3.60</li>
+            </ul>    
+          </div>
+          
+          <script>
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+          
+          // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
+          </script>
+             
+          </body>
+          </html> 
+    </section> 
+<div class="footer">
+  <h2>Copyright 2022 by Hazim Farhan. All Right Reserved</h2>
+</div>
+</body>
+</html>
