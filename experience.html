@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+<title>Experience</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+  
+}
+
+</style>
+</head>
+<body>
+
+</style>
+</head>
+<body>
+
+    <section>
+            <div class="navbar">
+                <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+                <a href="biodata.html"><i class="fa fa-fw fa-user"></i> Biodata</a> 
+                <a href="experience.html"><i class="fa fa-fw fa-linkedin-square"></i> Experience</a> 
+                <a href="education.html"><i class="fa fa-fw fa-graduation-cap"></i> Education</a>
+                <a href="gallery.html"><i class="fa fa-fw fa-image"></i> Gallery</a>
+                <a href="contact me.html"><i class="fa fa-fw fa-paper-plane"></i> Contact Me</a>
+        </div>
+      </div>
+
+
+      <div class="header">
+        <h2 style="font-family:verdana;"><marquee> <i>My Experience</i></h2> </marquee>
+      
+      </div>
+        <div>
+        <br>
+        <br>    
+        <html>
+
+          <html>
+            <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+            * {box-sizing: border-box}
+            
+            /* Set height of body and the document to 100% */
+            body, html {
+              height: 100%;
+              margin: 0;
+              font-family: Arial;
+            }
+            
+            /* Style tab links */
+            .tablink {
+              background-color: rgb(244, 244, 244);
+              color: rgb(0, 0, 0);
+              float: left;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              padding: 14px 16px;
+              font-size: 17px;
+              width: 25%;
+            }
+            
+            .tablink:hover {
+              background-color: #777;
+            }
+            
+            /* Style the tab content (and add height:100% for full page content) */
+            .tabcontent {
+              color: rgb(0, 0, 0);
+              display: none;
+              padding: 100px 20px;
+              height: 100%;
+            }
+            
+            #Curriculum {background-color:#b9b9ab;}
+            #Designer{background-color: #b9b9ab ;}
+            #Editor {background-color: #b9b9ab ;}
+            #Business {background-color: #b9b9ab ;}
+            </style>
+            </head>
+            <body>
+            
+            <button class="tablink" onclick="openPage('Curriculum', this, '#b9b9ab ')" id="defaultOpen">Curriculum</button>
+            <button class="tablink" onclick="openPage('Designer', this,'#b9b9ab')">Designer</button>
+            <button class="tablink" onclick="openPage('Editor', this, '#b9b9ab')">Editor</button>
+            <button class="tablink" onclick="openPage('Business', this, '#b9b9ab ')">Business</button>
+            
+            <div id="Curriculum" class="tabcontent">
+              <h3>Curriculum</h3>
+              <p>I use to become the president of one o the academic club during my diploma studies. There are many of program and initiative that I have handle. It teach and give me the experience in leading a group and also how to communicate with the higher level persons.</p>
+            </div>
+            
+            <div id="Designer" class="tabcontent">
+              <h3>Website Designing</h3>
+              <p>I used to become a part time web designer hired by one of the local company.</p> 
+            </div>
+            
+            <div id="Editor" class="tabcontent">
+              <h3>Video Editor</h3>
+              <p>I also used to create and edit video for advertisement, information and knowledge video for one of the local company using Filmora</p>
+            </div>
+            
+            <div id="Business" class="tabcontent">
+              <h3>Getting Extra Pocket Money</h3>
+              <p>Rather than doing all of those part time job, I also used to do a small business which is selling phone casing via online. </p>
+            </div>
+            
+            <script>
+            function openPage(pageName,elmnt,color) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablink");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+              }
+              document.getElementById(pageName).style.display = "block";
+              elmnt.style.backgroundColor = color;
+            }
+            
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+            </script>
+               
+            </body>
+            </html> 
+
+            
+<div class="footer">
+  <h2>Copyright 2022 by Hazim Farhan. All Right Reserved</h2>
+</div>
+
+</body>
+</html>
+            
